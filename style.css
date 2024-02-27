@@ -1,0 +1,1802 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Lato:wght@300;900&family=Oswald&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Lato:wght@300;900&family=Nunito+Sans:opsz,wght@6..12,600&family=Oswald&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Lato:ital,wght@0,300;0,900;1,300;1,400&family=Nunito+Sans:opsz,wght@6..12,600&family=Oswald&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');/* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Lato:ital,wght@0,300;0,900;1,300;1,400&family=Nunito+Sans:opsz,wght@6..12,600&family=Oswald:wght@400;500&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap'); /* Oswald */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    background: rgb(251,212,155,255);
+    height: 6vh;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:rgba(55,71,79,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:#FBE0D2 ;
+}
+/* icon */
+.top{
+    width: 195px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+    color: rgba(27,100,209,255);
+    padding-bottom: 10px;
+}
+.top img{
+    height: 70px;
+    width: 65px;
+}
+form{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border:none;
+    outline: none;
+    background:rgb(251,212,155,255);
+    width: 170px;
+    height: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
+}
+form .search{
+    background: rgb(251,212,155,255);
+    width: 75px;
+    height: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form .search img{
+    height: 25px;
+}
+.up ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 10px;
+    font-weight:bolder;
+    font-size: 1.2rem;
+}
+.up ul .home{
+    color: rgba(247,179,47,255);
+}
+/* woods */
+.woods .total{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+}
+.woods .total .wood{
+    background: rgba(251,224,210,255);
+    display:grid;
+    place-items: center;
+    border-radius:10%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+.woods .wood img{
+    height: 120px;
+    width: 120px;
+} 
+.woods .total h2{
+    padding: 0.3rem;
+    height: 6vh;
+    font-size: 1.2rem;
+    color: #3B4A51;
+}
+.star{
+    height: 5vh;
+    font-size: 1.4rem;
+    color: rgba(248, 228, 6, 0.965);
+}
+.woods .total h1{
+    height: 5vh;
+    color: rgb(8, 167, 195);
+    font-size: 1.3rem;
+    margin: 0;
+}
+.woods .total strong{
+    height: 2vh;
+    font-size: 1rem;
+    color:rgb(8, 167, 195);
+}
+/* chairs */
+.chairs .chair img{
+    height: 150px;
+    width: 150px;
+}
+.chairs .chair{
+    margin: 1rem auto;
+    height: 180px;
+    width: 200px;
+    background: white;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sofa{
+    background:rgb(251,212,155,255);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sofa img{
+    height: 150px;
+    width: 150px;
+}
+.profile{
+    height: 15vh;
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    grid-template-columns: 35% 65%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+.profile .left{
+    background: #d2d4dc;
+    width: 65px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .left img{
+    height: 50px;
+    width: 35px;
+}
+.profile .right h2{
+    padding: 0 5px;
+    font-size:0.9rem;
+    font-weight: 400;
+    color: #3B4A51;
+}
+/* mobile mode */
+@media (min-width:300px){
+    /* section one */
+    header{
+        width: 100%;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    .top{
+        margin: 0 auto;
+    }
+    .up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .up ul{
+        width: 100%;
+    }
+    .one{
+        height: 130vh;
+        width: 100%;
+        padding: 1rem;
+    }
+    .one .left .offer{
+        background:rgb(251,212,155,255);
+        width: 180px;
+        height: 5vh;
+        padding:0.3rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .one h2{
+        padding-top: 1rem;
+        font-size: 1.8rem;
+        color:rgba(27,100,209,255);
+    }
+    .one h2 .bracket{
+        font-size: 2.4rem;
+    }
+    .one .left h1{
+        font-size: 2.8rem;
+        color:rgba(247,179,47,255);
+    }
+    .one .left p{
+        font-size: 1rem;
+        padding: 1rem 0;
+        text-align: justify;
+    }
+    .one .left .features .feature{
+        height: 8vh;
+        display: flex;
+    }
+    .one .left .features{
+        padding-bottom: 1rem;
+    }
+    .one .left .features .feature p{
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight:700;
+    }
+    .one .left .features .feature img{
+        height: 50px;
+        width: 40px;
+    }
+    .one .total .left .button strong{
+        font-size: 2rem;
+        height: 40px;
+    }
+    .one .total .left a{
+        text-decoration: none;
+    }
+    .one .right{
+        margin: 2rem auto;
+        width:270px;
+        height: 41vh;
+        background: rgb(251,212,155,255);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .one .right img{
+        height:220px;
+        width: 200px;
+        cursor: pointer;
+    }
+    .one .right img:hover{
+    height: 320px;
+    width: 90%;
+    }
+    /* section two */
+    .two{
+        margin: 1rem auto;
+        width:80%;
+        height: 120vh;
+        background: rgb(251,212,155,255);
+        border-radius: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .two h3{
+        height: 10vh;
+        width: 200px;
+        margin:0 auto;
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-family: 'Oswald';
+        color:rgba(55,71,79,255);
+        text-align: center;
+    }
+    .two h1{
+        color:rgba(55,71,79,255);
+        font-size: 2.5rem;
+        text-align: end;
+        padding-right: 15%;
+    }
+    /* section three */
+    .three{
+        margin: 1rem auto;
+        height: 75vh;
+        width: 80%;
+        background:rgba(251,224,210,255);
+        border-radius: 5px;
+    }
+    .three .ocassion{
+        height: 75vh;
+        display: grid;
+        grid-template-rows:30vh 15vh 30vh;
+        place-items: center;
+    }
+    .three img{
+        height: 150px;
+        width: 150px;
+    }
+    .three p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin:1rem auto;
+        color: rgb(59,74,81,255);
+    }
+    /* section four */
+    .four{
+        margin: 1rem 2rem;
+    }
+    .four .cushions .cushion h3{
+        font-size: 1rem;
+        color: rgb(67, 67, 248);
+    }
+    .four .cushions .cushion h1{
+        color: rgb(59,74,81,255);
+    }
+    .four .cushions .cushion p{
+        color: rgb(59,74,81,255);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .four .cushions .cushion h2{
+        color: rgb(59,74,81,255);
+        font-size: 1.1rem;
+    }
+    .four .cushions .cushion{
+        height: 231px;
+        width: 236px;
+        background: rgba(251,224,210,255);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .four .cushions .cushion img{
+        height: 100px;
+    }
+    /* section five */
+    .five{
+        margin: 1rem auto;
+        height: 115vh;
+        width: 90%;
+        background: rgba(251,224,210,255);
+    }
+    .five .left{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .five .left .image{
+       background: white;
+       border: 2px solid gray;
+       border-radius: 10px;
+       height: 20vh;
+       width: 70%;
+       margin: 1rem auto;
+       display: grid;
+       place-items: center;
+    }
+    .five .left img{
+        width:90px;
+        height:100px;
+    }
+    .five .right{
+        padding: 1rem;
+    }
+    .five .right h1{
+        margin:0 0 0 0;
+        color: rgb(59,74,81,255);
+        font-size: 1.5rem;
+    }
+    .five .right h1 strong{
+        color: rgba(255, 181, 7, 0.964);
+    }
+    .five .right p{
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+    .five .right ul .circle{
+        list-style: none;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns:15% 85%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .five .right ul .tick{
+        background: rgba(238, 187, 70, 0.964);
+        color: white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+    }
+    .five .right ul li{
+        color: rgb(59,74,81,255);
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-align:start;
+    }
+    .five .right button{
+        margin-top: 2rem;
+        background: white;
+        color: rgba(238, 187, 70, 0.964);
+    }
+    .five .right button:hover{
+        background-color:#3c3e3e;
+    }
+    /* section six */
+    .six{
+        margin: 1rem;
+        height: 185vh;
+    }
+    .six h1{
+        color: rgb(59,74,81,255);
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .six h1 strong{
+    color:rgba(245, 178, 21, 0.964) ;
+    }
+    .six p{
+        font-size: 1rem ;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .six ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+        
+    }
+    .six ul li{
+        font-family:'Roboto';
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .six .color{
+        background: rgba(251,212,155,255);
+        height: 22px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* section seven */
+.seven{
+    height:210vh;
+    margin: 1rem; 
+}
+.seven .down{
+    height:50vh;
+    background: rgba(251,224,210,255);
+    border-radius: 20px;
+    width:95%;
+    margin:0 auto;
+}
+.seven .down .left{
+    height: 25vh;
+    text-align: center;
+}
+.seven .down .left h1{
+    padding-top: 1rem;
+    font-size: 2.2rem;
+    color: #3B4A51;
+}
+.seven .down .left h2{
+    font-size: 1.8rem;
+    font-weight:normal;
+    font-family: 'Lato';
+    color: #3B4A51;
+    padding: 10px 0;
+}
+.seven .down .left .button{
+    margin:0 auto;
+    background-color: white;
+}
+.seven .down .left .button:hover{
+    background-color:#3c3e3e;
+    color: white;
+}
+.seven .down .right{
+    display: flex;
+    justify-content: center;
+}
+.seven .down .right img{
+    height: 20vh;
+    width: 65%;
+}
+/* section eight */
+.eight{
+    height: 170vh;
+    width: 90%;
+    background: rgba(251,224,210,255);
+    margin: 1rem auto;
+    text-align: center;
+}
+.eight h1{
+    height: 9vh;
+    padding: 1rem 0;
+    font-size:1.5rem ;
+    color: #3B4A51;
+}
+.eight h1 strong{
+    color:rgba(245, 178, 21, 0.964) ;
+    }
+.eight p{
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: #3B4A51;
+}
+.eight .total{
+    display: flex;
+    flex-direction: column;
+}
+/* section nine */
+.nine{
+    height: 135vh;
+    margin: 1rem;
+}
+.nine h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3B4A51;
+}
+.nine .blogs .blog{
+    background: rgba(251,224,210,255);
+    width: 260px;
+    height: 260px;
+    margin: 1.5rem auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nine .blogs .blog img{
+    height: 180px;
+    width: 180px;
+}
+.nine .blogs .blog p{
+    margin:0.5rem auto;
+    width: 95%;
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+    color: rgb(9, 9, 84);
+    text-align: center;
+}
+/* section ten */
+.ten{
+    margin: 1rem auto;
+    width:80%;
+    height: 120vh;
+    background: rgba(251,224,210,255);
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ten h3 strong{
+    font-weight: 900;
+}
+.ten h3{
+    height: 10vh;
+    width: 200px;
+    margin:0 auto;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color:rgba(55,71,79,255);
+    text-align: center;
+}
+.ten h1{
+    color:rgba(55,71,79,255);
+    font-size: 2rem;
+    text-align: end;
+    padding-right: 15%;
+}
+/* section eleven */
+.eleven{
+    margin: 2rem;
+    height: 60vh;
+}
+.eleven .map{
+    margin: 0 auto;
+    width: 95%;
+    height: 60vh;
+}
+/* section twelve */
+.twelve{
+    height:110vh;
+    width: 90%;
+    margin: 2rem auto;
+    color: rgb(53, 53, 109);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.twelve .left p{
+    height: 15vh;
+    width: 85%;
+    margin: 1rem auto;
+}
+.twelve .right{
+    margin: 1rem;
+    text-align: center;
+}
+.twelve .right .feature h2{
+    font-size: 1.2rem;
+    margin: 1rem;
+    color:#37474f;
+}
+.twelve .right .feature ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+/* section thirteen */
+.thirteen{
+    height: 285vh;
+    margin:1rem;
+}
+.thirteen .middle{
+    margin: 1rem auto;
+    height: 300px;
+    width: 270px;
+}
+.thirteen .middle img{
+    height: 300px;
+    width: 270px;
+}
+.thirteen .right{
+    height: 70vh;
+    margin: 0 1rem;
+    overflow: scroll;
+}
+.thirteen .right h1{
+    margin-top: 0.5rem;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    color: #37474f;
+}
+.thirteen .right p{
+    margin: 1rem 0;
+}
+.thirteen .right h2{
+    color: #08A7C3;
+}
+.thirteen .right .features .feature{
+    height: 50px;
+    display: grid;
+    margin: 0.5rem auto;
+    grid-template-columns: 25% 55%;
+    justify-content: center;
+    align-items: center;
+}
+.thirteen .right .features .feature p{
+    font-weight: 600;
+}
+.thirteen .right .feature img{
+    height: 40px;
+}
+.thirteen .right .colors ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.thirteen .right .colors ul li{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+}
+.thirteen .right .colors .color1{
+    background: #FBD49B;
+}
+.thirteen .right .colors .color2{
+    background: #0635f0;
+}
+.thirteen .right .colors .color3{
+    background: #ecac4d;
+}
+.thirteen .right .colors .color4{
+    background: #3e2d12;
+}
+.thirteen .right .colors .color5{
+    background: #0f2915;
+}
+.thirteen .right .colors .color6{
+    background: #c6a0c1;
+}
+.thirteen .right .colors .color7{
+    background: #296e71;
+}
+.thirteen .right .details h2{
+    font-size: 1rem;
+    margin: 1rem auto;
+    color:#090954;
+    font-weight: 300;
+}
+.thirteen .right .about h2{
+    color: #37474f;
+}
+.thirteen .right .about ul li{
+    margin: 1rem;
+    color: #090954;
+    margin: 1rem;
+    font-size: 1rem;
+}
+/* section fourteen */
+.fourteen{
+    width: 90%;
+    height: 93vh;
+    margin: 1rem auto; 
+}
+.fourteen h2{
+    color: #37474f;
+    width: 220px;
+    margin: 0 auto;
+}
+.fourteen .left{
+    width: 70%;
+    margin: 2rem auto;
+}
+.fourteen .right{
+    width: 70%;
+    margin: 2rem auto;
+}
+.fourteen th, td{
+    width: 60%;
+    height: 7vh; 
+    text-align: center;
+}
+.fourteen table, th, td{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+/* section fifteen */
+.fifteen{
+    margin: 1rem;
+    height: 226vh;
+}
+.fifteen h2{
+    font-size: 1.2rem;
+    width: 90%;
+    margin:2rem auto;
+    color: #37474f;
+}
+.fifteen .chairs .chair{
+    height: 341px;
+}
+.fifteen .chairs .chair .sofa{
+    height: 200px;
+}
+.fifteen .chairs .chair p{
+    height: 37px;
+    margin:1rem auto;
+    font-weight: 500;
+}
+.fifteen .button{
+    height: 6vh;
+}
+/* section sixteen */
+.sixteen{
+    display:none;
+}
+/* section seventeen */
+.seventeen{
+    height: 220vh;
+    margin: 1rem;
+}
+.seventeen .ratings{
+    width: 268px;
+    margin: 0 auto;
+}
+.seventeen .left h2{
+    width: 200px;
+    margin: 1rem auto;
+    color: #37474f;
+}
+.seventeen .left h1{
+    font-size: 2.5rem;
+    width: 230px;
+    height: 8vh;
+    margin:0 auto;
+}
+.seventeen .left h1 .half{
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.seventeen .left h1 .half::before{
+    content: '\2605';
+    position: absolute;
+    color:rgba(238, 204, 9, 0.965);
+    overflow: hidden;
+    width: 50%;
+}
+.seventeen .left p{
+    color: #3B4A51;
+    width: 200px;
+    margin:auto;
+    font-size: 1.3rem;
+}
+.seventeen .left .ratings .rating{
+    color: #3B4A51;
+    width:100% ;
+    display: grid;
+    grid-template-columns:30% 70%;
+    margin: 1rem;
+}
+.seventeen .left .ratings .rating .rate{
+    height: 4vh;
+    width: 170px;
+    background: #FBD49B;
+    border-radius: 15px;
+}
+.seventeen .left .ratings .rating .rate5{
+    height: 4vh;
+    width: 140px;
+    border-radius: 15px;
+    background:#2550fc;
+}
+.seventeen .left .ratings .rating .rate4{
+    height: 4vh;
+    width: 55px;
+    border-radius: 15px;
+    background:#2550fc;
+}
+.seventeen .left .ratings .rating .rate3{
+    height: 4vh;
+    width: 85px;
+    border-radius: 15px;
+    background:#2550fc;
+}
+.seventeen .left .ratings .rating .rate2{
+    height: 4vh;
+    width: 20px;
+    border-radius: 15px;
+    background:#2550fc;
+}
+.seventeen .left .ratings .rating .rate1{
+    height: 4vh;
+    width: 40px;
+    border-radius: 15px;
+    background:#2550fc;
+}
+.seventeen .right{
+    width:280px;
+    margin: 1rem auto;
+}
+.seventeen .profile{
+    height: 18vh;
+    border: 2px solid #37474f;
+}
+.seventeen .right .profile .right{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+}
+/* tablet mode */
+@media (min-width:700px){
+    /* header */
+    .up{
+        width: 100%;
+       flex-direction: row;
+    }
+    .up ul{
+        width: 50%;
+    }
+    input{
+        width: 60%;
+        height: 40px;
+    }
+    form{
+        width: 300px;
+    }
+    form .search{
+        width: 80px;
+        height: 40px;
+    }
+    ul li{
+        font-size: 1.3rem;
+    }
+    /* section one */
+    .one{
+        height: 130vh;
+    }
+    /* section two */
+    .two{
+        height:60vh;
+        width: 95%;
+    }
+    .two h3{
+        font-size: 2rem;
+        height: 50px;
+        width: 100%;
+        margin:0 0;
+    }
+    .two h1{
+        height: 5vh;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    .two .century2 .chairs{
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+    }
+    .two .century2 .chairs .chair{
+        margin: 0rem 0.5rem;
+        height: 100%;
+        width: 90%;
+    }
+    .two .century2 .chairs .chair img{
+        height: 80%;
+        width: 70%;
+    }
+/* section three */
+.three{
+    margin: 3rem auto;
+    height: 30vh;
+    width: 80%;
+}
+.three .ocassion{
+    height: 30vh;
+    position: relative;
+    z-index: 0;
+    display:grid;
+    grid-template-columns:30% 40% 30%;
+}
+.three .ocassion .square{
+    background: rgb(198, 205, 208);
+    height: 6vh;
+    position: absolute;
+    bottom: 4vh;
+    width: 97%;
+    z-index:-1;
+    border-radius: 15px;
+}
+/* section four */
+.four .cushions{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+}
+.four .cushions .cushion{
+    width: 40%;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+/* section five */
+.five{
+    height: 130vh;
+    width: 80%;
+}
+.five .left{
+    height: 70vh;
+}
+.five .left .image{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+.five .right{
+    margin: 1rem 0;
+}
+.five .right ul .circle{
+    display: grid;
+    grid-template-columns: 7% 93%;
+}
+/* section six */
+.six{
+    height: 110vh;
+    margin: 2rem;
+}
+.six h1{
+    font-size: 1.8rem;
+}
+.six p{
+    font-size: 1.2rem;
+}
+.six ul .color{
+    width: 100px;
+    height: 5vh;
+}
+.six ul li{
+    font-size: 1.2rem;
+}
+.six .woods{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* section seven */
+.seven{
+    margin: 2rem;
+    height: 135vh;
+}
+.seven .woods{
+    height:80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.seven .down{
+    width:85%;
+}
+.seven .down .right img{
+    height: 170px;
+    width: 400px;
+    margin: 0 auto;
+}
+/* section eight */
+.eight .total .up{
+    flex-direction: column;
+}
+.eight h1{
+    font-size: 2.5rem;
+}
+.eight p{
+    font-size: 1.3rem;
+}
+.eight .profile{
+    margin: 1rem  auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.eight .profile .right h2{
+    font-size: 1.1rem;
+}
+/* section nine */
+.nine{
+    margin: 2rem;
+    padding: 1rem;
+    height: 55vh;
+}
+.nine .blogs{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+}
+.nine .blogs .blog{
+    margin: 0.5rem;
+}
+.nine .blogs .blog img{
+    width: 170px;
+    height: 170px;
+}
+/* section ten */
+.ten{
+    height:60vh;
+    width: 95%;
+}
+.ten .centuries{
+    width: 100%;
+    height: 55vh;
+}
+.ten h3{
+    font-size: 2rem;
+    height:80px;
+    width: 100%;
+    margin:0 0;
+}
+.ten h1{
+    height: 5vh;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+.ten .century2 .chairs{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+.ten .century2 .chairs .chair{
+    margin: 0rem 0.5rem;
+    height: 30vh;
+    width: 90%
+}
+.ten .century2 .chairs .chair img{
+    height: 85%;
+    width: 70%;
+}
+/* section eleven */
+.eleven{
+    margin: 3rem 5rem;
+    height: 65vh;
+}
+.eleven .map{
+    margin: 0 auto;
+    height: 65vh;
+    width: 80%;
+}
+/* section twelve */
+.twelve{
+    height:50vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.twelve .left{
+    height: 40vh;
+    width: 100%;
+    margin: 1rem auto;
+}
+.twelve .left p{
+    height: 20vh;
+    width: 85%; 
+}
+.twelve input{
+    height: 40px;
+}
+.twelve .search{
+    height: 40px;
+}
+.twelve .right{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.twelve .right .feature{
+    text-align: start;
+}
+.twelve .right .feature ul li{
+    font-size: 0.9rem;
+    margin: 1rem;
+}
+.empty{
+    background:#FBE0D2;
+    height: 15vh;
+    width: 100%;
+}
+/* section thirteen */
+.thirteen{
+    height: 215vh;
+}
+.thirteen input{
+    height: 40px;
+    width: 60%;
+}
+.thirteen .search{
+    height: 40px;
+}
+.thirteen .left{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+}
+.thirteen .right h1{
+    width: 50%;
+    margin:0;
+    font-size: 1.7rem;
+}
+.thirteen .right .features{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.thirteen .right .features .feature img{
+    height: 53px;
+}
+.thirteen .right .features .feature{
+    height: 70px;
+    display: grid;
+    grid-template-columns:40% 50%;
+}
+/* section fourteen */
+.fourteen{
+    width: 90%;
+    height: 85vh;
+    margin: 1rem auto;
+}
+.fourteen h2{
+    width: 100%;
+    text-align: start;
+}
+.fourteen .total{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.fourteen .left{
+    width: 80%;
+    margin: 2rem auto;
+}
+.fourteen .right{
+    width: 80%;
+    margin: 2rem auto;
+}
+.fourteen table{
+    width: 100%;
+}
+/* section fifteen */
+.fifteen{
+    height: 127vh;
+    margin:1rem ;
+}
+.fifteen h2{
+    width: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.fifteen .chairs{
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.fifteen .chairs .chair{
+    height: 341px;
+}
+.fifteen .chairs .chair .sofa{
+    height: 200px;
+}
+/* section sixteen */
+.sixteen{
+    margin: 3rem 1rem;
+    height: 90vh;
+    display: block;
+}
+.sixteen table{
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+} 
+.sixteen table tr,td{
+    width: 20%;
+    margin: 0 auto;
+    height: 11vh;
+}
+.star{
+    color: #EECC09F6;
+    font-size: 1.5rem;
+}
+/* section seventeen */
+.seventeen{
+    height: 145vh;
+}
+.seventeen .right{
+    width: 580px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+/* Desktop mode */
+@media(min-width:1200px){
+header{
+    margin: 1rem auto;
+        height:15vh;
+        width: 95%;
+}
+form{
+    width: 500px;
+}
+.one{
+    height: 90vh;
+    margin: 1rem auto;
+}
+.one .total{ 
+    display: grid;
+    grid-template-columns: 55% 40%;
+    height: 85vh;
+}
+.one .total .left{
+    margin:0 3rem ;
+}
+.one .total .left .offer{
+    width: 220px;
+    height: 5vh;
+}
+.one .total .left h1{
+    padding-top: 0.5rem;
+    font-size: 4rem;
+}
+.one .total .left p{
+    width: 70%;
+    font-size: 1.2rem;
+    line-height:3.5vh;
+}
+.one .total .left .features{
+    display: flex;
+    width:100%;
+    padding: 0;
+}
+.one .total .left .features .feature img{
+    margin-right: 1rem;
+}
+.one .total .left .features .feature p{
+    font-size: 1.1rem;
+    width: 50%;
+    height: 8vh;
+    padding:0;
+    margin-left: 0;
+    margin-right: 15px;
+}
+.one .total .left .button{
+    margin: 5rem 0;
+}
+.one .total .right{
+    margin: auto;
+    height:450px;
+    width: 470px;
+}
+.one .total .right img{
+    height: 350px;
+    width:300px;
+}
+.one .total .right img:hover{
+    width: 70%;
+    height: 93%;
+}
+/* section two */
+.two{
+    height: 40vh;
+    width: 95%;
+    border-radius: 0;
+}
+.two .centuries .century1{
+    height: 25vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.two .centuries .century1 h3{
+    width: 85%;
+    height: 22vh;
+    padding-top: 30px;
+    font-size: 2.5rem;
+}
+.two .centuries .century1 h1{ 
+    width: 100%;
+    font-size: 5rem;
+    height:15vh;
+}
+.two .centuries{
+    display: grid;
+    grid-template-columns:35% 65%;
+    height: 27vh;
+}
+.two .century .chairs .chair{
+    width: 100%;
+}
+/* section three */
+.three .ocassion p{
+    height: 120px;
+    font-size: 2rem;
+}
+.three .ocassion .square{
+    width: 87%;
+    height: 7vh;
+}
+/* section four */
+.four .cushions .cushion{
+    width: 35%;
+    height: 37vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.four .cushions .cushion .left{
+    width: 30%;
+}
+.four .cushions .cushion .right{
+height:0;
+}
+.four .cushions .cushion .right img{
+    height: 120px;
+    width: 120px;
+}
+/* section five */
+.five{
+    height: 100vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 45% 40% 15%;
+    justify-content: center;
+    align-items: center;
+}
+.five .left{
+    height:510px;
+    width: 437px;
+    padding: 1rem;
+    margin: 2rem 1rem 1rem 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.five .left .image.image1{
+    height: 170px;
+    width: 100px;
+    position: relative;
+    top:+10%;
+    left: 5%;
+}
+.five .left .image.image2{
+    height: 210px;
+    width: 225px;
+    position:relative;
+    left: -10%;
+    bottom: -10%;
+} 
+.five .left .image.image3{
+    height: 220px;
+    width: 220px;
+    position:relative ;
+    top:-12%;
+    right:-26%;
+} 
+.five .left .image.image4{
+    height: 160px;
+    width: 120px;
+    position: relative;
+    bottom: -10%;
+    right: -20%;
+} 
+.five .left .image.image1 img{
+    height: 120px;
+    width: 70px;
+}
+.five .left .image.image2 img{
+    height: 200px;
+    width: 180px;
+}
+.five .left .image.image3 img{
+    height: 200px;
+    width: 150px;
+}
+.five .left .image.image4 img{
+    height: 130px;
+    width: 100px;
+}
+
+.five .right{
+    height: 70vh;
+}
+.five .right h1{
+    font-size: 2.7rem;
+}
+.five .right p{
+    font-size: 1.3rem;
+    color: #3B4A51;
+    font-family: 'Roboto';
+}
+.five .right ul .tick{
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+}
+.five .right ul .circle{
+    grid-template-columns: 12% 60%;
+    justify-content: start;
+}
+.five .right ul .circle li{
+    font-size: 1.4rem;
+}
+.five .right .button{
+    height: 7vh;
+    width: 60%;
+    font-size: 1.5rem;
+}
+.five .dots{
+    height: 30vh;
+    width: 150px;
+    margin:auto 0 1rem 1rem ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: start;
+}
+.five .dot{
+    height:10px;
+    width: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* section six */
+.six{
+    height: 74vh;
+}
+.six h1{
+    font-size: 3rem;
+}
+.six p{
+    width:45%;
+    text-align:center;
+    margin: 2rem  auto;
+}
+.six .woods{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+/* section seven */
+.seven{
+    height: 105vh;
+}
+.seven .woods{
+    margin-top: 6rem;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.seven .down{
+    margin-top: 6rem;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+}
+.seven .down .left h1{
+    font-size: 3.5rem;
+}
+.seven .down .left h2{
+    font-size: 2.1rem;
+}
+.seven .down .left .button{
+    height: 50px;
+}
+.seven .down .right img{
+    height: 300px;
+    width: 450px;
+}
+/* section eight */
+.eight{
+    height: 95vh;
+}
+.eight .total {
+    margin:1rem auto;
+}
+.eight .total .up{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.eight .total .middle{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.eight .total .bottom{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.eight .total .profile{
+    width: 330px;
+    height: 20vh;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.eight .total .profile .left {
+    margin: 0 auto;
+}
+.eight .total .profile .right{
+    height: 15vh;
+    width: 240px;
+    text-align: start;
+}
+.eight .total .profile .right h2{
+    padding-top: 10px;
+    width: 200px;
+    font-size: 100%;
+    height: 8vh;
+    font-family: 'Roboto Condensed';
+}
+.eight .total .profile .right h3{
+    width: 130px;
+}
+/* section nine */
+.nine{
+    height: 80vh;
+}
+.nine h1{
+    margin: 3rem 13rem;
+    font-size:2.5rem;
+    text-align: start;
+}
+.nine .blogs{
+    width: 100%;
+}
+.nine .blogs .blog{
+    height: 350px;
+    width: 250px;
+    margin:0 3rem;
+}
+.nine .blogs .blog img{
+    height: 250px;
+    width: 240px;
+}
+.nine .blogs .blog p{
+    height: 10vh;
+    width: 100%;
+    text-align: start;
+    padding: 1.5rem 1rem 0 1rem;
+}
+/* section ten */
+.ten{
+    height: 40vh;
+    width: 95%;
+    border-radius: 0;
+}
+.ten .centuries .century1{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ten .centuries .century1 h3 strong{
+    font-size:2.5rem;
+}
+.ten .centuries .century1 h3{
+    width: 100%;
+    height: 30vh;
+    padding: 2rem 0 0 3rem;
+    font-size: 2rem;
+    text-align: start;
+}
+.ten .centuries .century1 h1{ 
+    width: 55%;
+    height: 10vh;
+    font-size: 4rem;
+}
+.ten .centuries{
+    display: grid;
+    grid-template-columns:35% 65%;
+    height: 30vh;
+}
+.ten .century .chairs .chair{
+    width: 100%;
+}
+/* section eleven */
+.eleven{
+    margin: 4rem auto;
+}
+/* section twelve */
+.twelve{
+    height: 42vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.twelve .left p{
+    width: 45%;
+    height: 130px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.twelve .feature{
+    height: 40vh;
+}
+.twelve .right .feature h2{
+    padding-bottom: 1rem;
+}
+.twelve .right .feature ul li{
+    margin: 1.5rem;
+}
+/* section thirteen */
+.thirteen{
+    height: 120vh;
+    width: 97%;
+}
+.thirteen .up{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+}
+.thirteen .up ul{
+    width: 40%;
+}
+.thirteen .total{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:15% 35% 40%;
+    justify-content: center;
+    align-items: center;
+}
+.thirteen .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.thirteen .left .sofa{
+    height: 130px;
+    width: 130px;
+}
+.thirteen .left .sofa img{
+    height: 110px;
+    width: 110px;
+}
+.thirteen .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirteen .middle img{
+    height: 70vh;
+    width: 192%;
+}
+.thirteen .right{
+    height: 86vh;
+}
+.thirteen .right h1{
+    width: 100%;
+}
+/* section fourteen */
+.fourteen{
+    height: 85vh; 
+}
+.fourteen h2{
+    width: 90%;
+    font-size: 2rem;
+}
+table{
+    width: 100%;
+}
+th, td{
+    height: 10vh;
+    font-size: 1.1rem;
+}
+/* section fifteen */
+.fifteen{
+    height: 75vh;
+}
+.fifteen .chairs{
+    width: 78%;
+    margin: 2rem 0 1rem 15rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+}
+/* section sixteen */
+.sixteen{
+    height: 90vh;
+}
+.sixteen table{
+    width:80%;
+    margin: 0 auto;
+}
+.sixteen .star{
+    font-size: 2rem;
+}
+/* section seventeen */
+.seventeen{
+    height: 100vh;
+}
+.seventeen .total{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.seventeen .left h2{
+    width: 260px;
+    font-size: 1.8rem;
+}
+}
